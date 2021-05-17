@@ -3,6 +3,7 @@ import './App.css';
 
 // Components
 import { CountriesList } from './components/CountriesList/CountriesList'
+import { HeaderComponent } from './components/Header/Header'
 
 // Lo unico que hereda son las clases
 export class HomeComponent extends React.Component {
@@ -37,11 +38,11 @@ export class HomeComponent extends React.Component {
     }
     
     render(){
-        console.log('metodo Render', this.params)
         // Cuando uso HTML el this desaparece ¿Cual es el this de HTML?
         // this is HTML
         return (
             <div>
+                <HeaderComponent />
                 <p className="amor"> My name:
                     <span className="hola">{this.name} - {this.state.last}</span>
                 </p>

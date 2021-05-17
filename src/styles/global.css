@@ -1,0 +1,5 @@
+@import './variables.css';
+
+.text-color {
+    color: var(--text-color);
+}
